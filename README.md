@@ -33,7 +33,32 @@ The tool accepts your DevOps configuration files, runs them through an **Analyze
 
 ## 📸 UI Preview
 
-![UI Preview](docs/screenshot.png) <!-- Replace with your actual path -->
+
+Below is the main UI of **LLM DevOps Auto-Reviewer**, where you can either upload your DevOps configuration file (Terraform, YAML, JSON, etc.) or paste its content directly. Once submitted, the tool analyzes, reviews, and critiques your configuration, providing actionable insights and best practice suggestions — all powered by local LLMs.
+![UI Preview](screenshots/Screenshot1.png)
+
+
+---
+
+After submitting a Terraform configuration file, **LLM DevOps Auto-Reviewer** processes it and provides actionable feedback.  
+In the example below, the tool reviews an AWS EC2 instance definition, suggests improvements such as using data sources for AMI lookup, applying variables for reusability, and following best security practices.
+![UI Preview](screenshots/Screenshot2.png)
+
+
+---
+
+The tool not only flags issues but also provides **code examples** for improvements.  
+In the screenshot below, the AI suggests replacing a hardcoded AMI ID with a Terraform **data source** block, improving maintainability and flexibility.
+
+![Detailed Suggestion](screenshots/Screenshot3.png)
+
+
+---
+
+The AI not only identifies potential improvements but also lists **actionable best practices**.  
+In this screenshot, it suggests using variables, Terraform modules, IAM roles, and version control to enhance maintainability, security, and scalability.
+
+![Best Practices](screenshots/Screenshot4.png)
 
 ---
 
